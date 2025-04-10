@@ -1,0 +1,150 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.dashboard-container {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.dashboard-container .card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 20px;
+}
+
+.dashboard-container .card-body {
+  padding: 1.5rem;
+}
+
+.dashboard-container .form-group {
+  margin-bottom: 1rem;
+}
+
+.dashboard-container .form-label {
+  font-weight: 500;
+  color: #495057;
+}
+
+.dashboard-container .form-control,
+.dashboard-container .form-select {
+  border-radius: 0.375rem;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+}
+
+.dashboard-container .card-title {
+  color: #495057;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.dashboard-container h3 {
+  color: #212529;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.stats-card {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+.stats-card .icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.stats-card.sales {
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+  color: white;
+}
+
+.stats-card.quantity {
+  background: linear-gradient(45deg, #4CAF50, #388E3C);
+  color: white;
+}
+
+.stats-card.discount {
+  background: linear-gradient(45deg, #FF9800, #F57C00);
+  color: white;
+}
+
+.stats-card.profit {
+  background: linear-gradient(45deg, #9C27B0, #7B1FA2);
+  color: white;
+}
+
+.chart-container {
+  height: 400px;
+  width: 100%;
+}
+
+.dropdown-dark {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-dark:focus {
+  background-color: #343a40;
+  color: white;
+  box-shadow: none;
+}
+
+.dropdown-dark option {
+  background-color: #343a40;
+  color: white;
+}

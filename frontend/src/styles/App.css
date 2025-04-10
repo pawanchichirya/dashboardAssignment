@@ -1,0 +1,142 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: #f8f9fa !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+  width: 100%;
+  padding: 1.5rem !important;
+}
+
+.main-content.sidebar-open {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}
+
+.container-fluid {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar.closed {
+  transform: translateX(-250px);
+}
+
+.card {
+  background-color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.card-header {
+  background-color: transparent !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.stats-card {
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.stats-card .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stats-card.sales .icon {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.stats-card.quantity .icon {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+}
+
+.stats-card.discount .icon {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.stats-card.profit .icon {
+  background-color: rgba(233, 30, 99, 0.1);
+  color: #e91e63;
+}
+
+.chart-container {
+  height: 300px;
+  width: 100%;
+}
+
+.table {
+  background-color: transparent !important;
+  color: #333 !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa !important;
+  color: #333 !important;
+}
+
+.dropdown-dark {
+  background-color: #ffffff !important;
+  border: 1px solid #dee2e6 !important;
+  color: #333 !important;
+}
+
+.nav-link {
+  color: #6c757d;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.card-title {
+  color: #333 !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+} 
