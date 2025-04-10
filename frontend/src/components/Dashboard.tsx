@@ -434,7 +434,7 @@ const Dashboard = () => {
   };
 
   return (
-    <Container fluid>
+    <Container fluid style={{height:"100vh"}}>
       <Row className="mb-4 g-3">
         <Col md={4}>
           <Form.Select
